@@ -150,6 +150,10 @@ atom-text-editor .search-results .marker.current-result .region,
       color: @hot-pink;
     }
 
+    &.tag {
+      color: @blue;
+    }
+
     &.string {
       color: @green;
     }
@@ -176,7 +180,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.section.embedded {
-    color: darken(@red, 10%);
+    color: @green;
   }
 
 }
@@ -207,16 +211,16 @@ atom-text-editor .search-results .marker.current-result .region,
   &.other.inherited-class {
     color: @orange;
   }
+
+  &.name.tag {
+    color: @blue;
+  }
   &.name.class, &.name.type.class {
     color: @orange;
   }
 
   &.name.section {
     color: @blue;
-  }
-
-  &.name.tag {
-    color: @orange;
   }
 
   &.other.attribute-name {
